@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Gear for Hiking in Utah</title>
-    <meta name="Description" content"Check out our Products page for various items to benefit you on you adventure to Utah. We offer an inventory of essential items to encourage others to bring them along the way. Each item serves a specific purpose and ensures you are prepared for anything. We bring the shopping to you, which saves our adventurists time when preparing for a big journey. You can compare our prices to several retailer, we carry the most affordable hiking  gear such as Backpacks and Tools. Check out Products for more!">
+    <meta name="description" content"Check out our Products page for various items to benefit you on you adventure to Utah. We offer an inventory of essential items to encourage others to bring them along the way. Each item serves a specific purpose and ensures you are prepared for anything. We bring the shopping to you, which saves our adventurists time when preparing for a big journey. You can compare our prices to several retailer, we carry the most affordable hiking  gear such as Backpacks and Tools. Check out Products for more!">
     <link rel="stylesheet" href="project.css">
+
 </head>
 <body>
     <header>
@@ -26,6 +27,7 @@
         <p>Prepare for your hiking adventures in Utah with our selection of essential gear. From safety items to tools, we've got everything you need to ensure a safe and enjoyable experience.</p>
 
         <div class="products-page">
+
             <div class="product-item">
                 <img src="product1.jpg" alt="First Aid Kit">
                 <h2>First Aid Kit</h2>
@@ -90,7 +92,13 @@
 
     <footer>
         <p>Copyright &copy; 2024 Beauties of Utah</p>
+        <p>Last modified: <span id="lastModifiedDate"></span></p>
         <p>Contact us: <a href="https://BreannahBrundage.com">BreannahBrundage.com</a></p>
     </footer>
+
+    <script>
+        document.getElementById('lastModifiedDate').textContent = document.lastModified;
+    </script>
+
 </body>
 </html>

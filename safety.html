@@ -5,6 +5,21 @@
     <title>Beauties of Utah</title>
     <meta name="Description" content"When visiting the state of Utah there are several things to learn and lookout for. We thrive to provide as much safety information to keep visitor safe when exploring the state. We also go into the importance of checking ahead for weather conditions, especially during the peak heat of Utah summers. It is not uncommon that tourist experience issue such as heat exhaustion from lack of preparation. You can never have too much water, in Utah dry climate one can dehydrate at a much faster rate. Which is why we encourage you to check out our Safety page for other recommendations. When encourage visitors to pack a few emergency items like a First aid kit, in case you find yourself hurt in a National Park.">
     <link rel="stylesheet" href="project.css">
+    <script>
+        window.onload = function() {
+            alert("Important Tip: Stay hydrated! Utah's desert climate can cause rapid dehydration. Make sure to carry plenty of water during your hikes.");
+        }
+
+        function toggleSafetyTip(id) {
+            var tip = document.getElementById(id);
+            if (tip.style.display === "none") {
+                tip.style.display = "block";  // Show the tip
+            } else {
+                tip.style.display = "none";  // Hide the tip
+            }
+        }
+    </script>
+
 </head>
 <body>
 
@@ -33,12 +48,14 @@
 
 
 <dl>
-    <dt>Before taking your trip to Utah it is always best to research and prepare to familiarize yourself with the area you wish to travel to. How can you prepare before your trip?</dt>
-    <dd>First you should research the area you want to see to understand the areas terrain and possible conditions. By doing this research it can also help you plan out the route for safe travels and identifying gas station locations. Planning your route can help choose a beautiful scenic drive to see more along the way. </dd>
+    <dt onclick="toggleSafetyTip('tip1')">Before taking your trip to Utah: Research & Preparation</dt>
+    <dd id="tip1" style="display:none;">
+First you should research the area you want to see to understand the areas terrain and possible conditions. By doing this research it can also help you plan out the route for safe travels and identifying gas station locations. Planning your route can help choose a beautiful scenic drive to see more along the way. </dd>
     <br>
 
-    <dt>How to prepare for during your trip?</dt>
-    <dd>It is extremely important to stock up on an appropriate water supply, Utah can have an extremely hot climate in the summer months and it poses a serious health risk for heat related illnesses. Ensure to wear appropriate attire for the hot or cold climate, and of course bring out the sunscreen. Know your limits when exploring especially when visiting the famous National Parks, some areas can be quite challenging and it is best to know when to turn around. There are points of high elevation in Utah and it is important to ensure if you are hiking or driving up to do so at a slow rate to safely acclimate to the elevation change. </dd>
+    <dt onclick="toggleSafetyTip('tip2')">During Your Trip: Staying Safe in the Climate</dt>
+    <dd id="tip2" style="display:none;">
+It is extremely important to stock up on an appropriate water supply, Utah can have an extremely hot climate in the summer months and it poses a serious health risk for heat related illnesses. Ensure to wear appropriate attire for the hot or cold climate, and of course bring out the sunscreen. Know your limits when exploring especially when visiting the famous National Parks, some areas can be quite challenging and it is best to know when to turn around. There are points of high elevation in Utah and it is important to ensure if you are hiking or driving up to do so at a slow rate to safely acclimate to the elevation change. </dd>
 </dl>
 
 <table>
