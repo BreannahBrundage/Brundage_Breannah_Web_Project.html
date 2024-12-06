@@ -5,6 +5,23 @@
     <title>Beauties of Utah</title>
     <meta name="Description" content"Thank you for check out Beauties of Utah, we encourage visitors to submit a Review to provide us feedback on your user experience. We are always looking to expand our features and information to help those looking to visit Utah. You may leave your name and date along with a short or detailed review of your experience and recommendations for the site. You can also reference back to the Navigation menu to view each page again.">
     <link rel="stylesheet" href="project.css">
+
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var date = document.getElementById("date").value;
+            var review = document.getElementById("review").value;
+            
+            if (name == "" || date == "" || review == "") {
+                alert("All fields are required. Please fill out the form completely.");
+                return false;
+            } else {
+                alert("Thank you for your review, " + name + "!");
+                return true;
+            }
+        }
+    </script>
 </head>
    <body>
       <header>
@@ -42,8 +59,13 @@
 
    <footer>
        <p> Copyright &copy; 2024 Beauties of Utah</p>
-       <p>Contact us: <a href="BreannahBrundage.com">BreannahBrundage.com</a></p>
+       <p>Last modified: <span id="lastModifiedDate"></span></p>
+       <p>Contact us: <a href="mailto:BreannahBrundage@gmail.com">BreannahBrundage@gmail.com</a></p>
    </footer>
+
+   <script>
+        document.getElementById('lastModifiedDate').textContent = document.lastModified;
+   </script>
 
 </body>
 </html>
